@@ -115,6 +115,7 @@ class BookingController extends BaseController
         $data->status='2';
         $data->save();
         return redirect()->back();
+        //test
     }
     
 }
