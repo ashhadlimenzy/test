@@ -1,0 +1,6 @@
+.latest-member .card li img{
+    width:125px;
+    object-fit: contain;
+    height: 125px !important;
+    border-radius: 20px !important;
+}
