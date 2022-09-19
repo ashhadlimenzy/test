@@ -22,8 +22,9 @@
         <link rel="stylesheet" href="{{ asset('/assets/css/admin.css') }}">
         <!-- Google Font: Source Sans Pro -->
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-{{--        <link rel="stylesheet" href="{{ asset('css/custom.css') }}">--}}
+        {{--<link rel="stylesheet" href="{{ asset('css/custom.css') }}">--}}
         @stack('styles')
+        @livewireStyles
     </head>
     <body class="hold-transition sidebar-mini">
         <div class="wrapper">
@@ -66,9 +67,9 @@
         <script src="{{ asset('bower_components/admin-lte/plugins/jquery/jquery.min.js') }}"></script>
         <script src="{{ asset('bower_components/admin-lte/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
         <script src="{{ asset('bower_components/admin-lte/dist/js/adminlte.min.js') }}"></script>
-{{--        <script src="{{ asset('js/sweetalert2.all.min.js') }}"></script>--}}
+        {{--<script src="{{ asset('js/sweetalert2.all.min.js') }}"></script>--}}
         <script src="{{ asset('bower_components/admin-lte/plugins/toastr/toastr.min.js') }}"></script>
-{{--        <script src="{{ asset('js/common.js') }}"></script>--}}
+        {{--<script src="{{ asset('js/common.js') }}"></script>--}}
         <!-- date-range-picker -->
         <script src="{{ asset('bower_components/admin-lte/plugins/daterangepicker/daterangepicker.js') }}"></script>
         {{-- <script src="{{ asset('../plugins/daterangepicker/daterangepicker.js') }}"></script> --}}
@@ -81,5 +82,6 @@
         </script>
         @include('pages.admin.includes.toastr')
         @stack('scripts')
+        @livewireScripts
     </body>
 </html>

@@ -1,0 +1,18 @@
+[33mcommit 1d411071dbf1087d11b53f54e992b112f2c0c10c[m
+Author: ashhad <ashhad.limenzy@gmail.com>
+Date:   Mon Sep 19 12:25:10 2022 +0530
+
+    test
+
+[1mdiff --git a/app/Http/Controllers/User/BookingController.php b/app/Http/Controllers/User/BookingController.php[m
+[1mindex 79a4b64..18818e4 100644[m
+[1m--- a/app/Http/Controllers/User/BookingController.php[m
+[1m+++ b/app/Http/Controllers/User/BookingController.php[m
+[36m@@ -115,6 +115,7 @@[m [mclass BookingController extends BaseController[m
+         $data->status='2';[m
+         $data->save();[m
+         return redirect()->back();[m
+[32m+[m[32m        //test[m
+     }[m
+     [m
+ }[m
