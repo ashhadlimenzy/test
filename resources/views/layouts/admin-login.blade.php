@@ -18,7 +18,7 @@
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
         @yield('styles')
-
+        @livewireStyles
     </head>
     <body class="hold-transition login-page">
         @yield('content')
@@ -32,5 +32,6 @@
         <script src="{{ asset('js/common.js') }}"></script>
         @include('pages.admin.includes.toastr')
         @yield('scripts')
+        @livewireScripts
     </body>
 </html>
