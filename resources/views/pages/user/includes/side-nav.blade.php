@@ -40,6 +40,14 @@
                 </a>
             </li>
 
+            <li class="nav-header">VIEW AVAILABLE DOCTOR</li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('user/user/index') }}">
+                    <i class="nav-icon fas fa-user-md"></i>
+                    <p>{{ __('Users') }}</p>
+                </a>
+            </li>
+
             <li class="nav-header">SITE SETTINGS</li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('user.logout') }}"

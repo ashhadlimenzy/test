@@ -27,6 +27,10 @@ Route::group(['prefix' => 'user', 'namespace' => 'User','as' => 'user.'], functi
         Route::get('booking/available-slots','BookingController@available_timeslot');
         Route::resource('booking', 'BookingController');
 
+        Route::get('user/index', function () {
+            return view('pages/user/user/index');
+        });
+
         // Available-Appointment
         Route::resource('available-appointment', 'AppointmentController');
 

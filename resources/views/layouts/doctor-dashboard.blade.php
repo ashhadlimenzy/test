@@ -19,8 +19,9 @@
         <link rel="stylesheet" href="{{ asset('/bower_components/admin-lte/plugins/toastr/toastr.min.css') }}">
         <!-- Google Font: Source Sans Pro -->
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-{{--        <link rel="stylesheet" href="{{ asset('css/custom.css') }}">--}}
+        {{--<link rel="stylesheet" href="{{ asset('css/custom.css') }}">--}}
         @stack('styles')
+        @livewireStyles
     </head>
     <body class="hold-transition sidebar-mini">
         <div class="wrapper">
@@ -68,5 +69,6 @@
 {{--        <script src="{{ asset('js/common.js') }}"></script>--}}
         @include('pages.doctor.includes.toastr')
         @stack('scripts')
+        @livewireScripts
     </body>
 </html>

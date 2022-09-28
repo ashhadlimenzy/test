@@ -52,4 +52,14 @@ class User extends Authenticatable
     {
         return with(new static)->getTable();
     }
+
+    public static function search($query)
+    {
+        return empty($query) ? static::query()
+            : static::
+                where(function($q) use ($query) {
+                    $q
+                        ->where('first_name', 'LIKE', '%'. $query . '%');
+                });
+    }
 }

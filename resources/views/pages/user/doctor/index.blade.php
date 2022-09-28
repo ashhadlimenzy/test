@@ -35,7 +35,7 @@
                         @foreach($doctors as $doctor)
                             <tr>
                                 <td class="text-center"><img src="{{ ProfileHelper::getProfileImageFromFile($doctor->profile_image,FileDestinations::DOCTOR . $doctor->id. '/profile/') }}" alt="{{ $doctor->first_name }}" width="90px"></td>
-                                <td class="text-center">Dr. {{ $doctor->first_name }}</td>
+                                <td class="text-center">Dr. {{ Str::limit(($doctor->first_name . ' ' . $doctor->last_name), 20, '...') }}</td>
                                 <td class="text-center">{{ $doctor->expertise}}</td>
                                 <td class="text-center">{{ $doctor->mobile}}</td>
                                 <td class="text-center">{{ $doctor->email}}</td>
